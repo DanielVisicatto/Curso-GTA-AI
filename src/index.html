@@ -1,33 +1,63 @@
+
 <!DOCTYPE html>
-<!-- DENTRO DA TAG HTML FICA TODO O MEU SISTEMA WEB(SITE) -->
-<html lang="us">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Cabeça(head) Configurações GERAIS do site -->
-    <head>
-        <!-- Padrão Caracteres -->
-        <meta charset="UTF-8">
-        
-        <!-- COMPATIVEL COM CELULARES E COMPUTADORES -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- TITULO DO SITE -->
-        <title>Document</title>
-    </head>
+    <link rel="stylesheet" href="styles/styles.css">
 
-    <!-- TUDO QUE EU ENXERGO NO SITE -->
-    <body>
-        <p>Lucia</p>
-        <img src="assets/images/lucia.png">
-        <!-- source = ORIGEM(onde ela tá?) -->
-        
-        <p>Selecione o seu Personagem</p>
-        <h1>Não é só um Jogo</h1>
-        <p>Escolha uma lenda de Dev City. Ou tire uma selfie e vire uma.</p>
-    
-        <button>Lucia</button>
-        <button>Jason</button>
-        <button>CJ</button>
-        <button>Você</button>
-    
-    </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+    <title>Dev City - Selecione seu personagem</title>
+</head>
+
+<body>
+    <main class="game-container">
+
+        <h2 class="name">Lucia</h2>
+
+        <img
+            class="character"
+            src="assets/images/lucia.png"
+            alt="Personagem Lucia"
+        >
+
+        <section class="texts">
+            <p class="selection">Selecione o seu Personagem</p>
+
+            <h1>Não é só <br>um Jogo</h1>
+
+            <p class="description">
+                Escolha uma lenda de Dev City.
+                Ou tire uma selfie e vire uma.
+            </p>
+        </section>
+
+        <nav class="menu" aria-label="Selecionar personagem">           
+
+            <button class="character-option" type="button" aria-label="Selecionar CJ">
+                <img src="assets/images/cj.png" alt="">
+            </button>
+
+            <button class="character-option" type="button" aria-label="Selecionar Jason">
+                <img src="assets/images/jason.png" alt="">
+            </button>
+
+            <button class="character-option" type="button" aria-label="Selecionar Lucia">
+                <img src="assets/images/lucia.png" alt="">
+            </button>
+
+            <button class="character-option you" type="button" aria-label="Tirar selfie">
+                <img src="assets/images/camera.jpeg" alt="">
+            </button>
+        </nav>
+
+    </main>
+
+    <script src="scripts/scripts.js"></script>
+</body>
 </html>
